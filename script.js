@@ -237,6 +237,16 @@ document.addEventListener('DOMContentLoaded', () => {
         { src: "images/hirdavat_pense.png", title: "Pense Blister Ambalaj" }
       ]
     },
+    'sektor-elektronik': {
+      title: "Elektronik Sektörü Örnekleri",
+      desc: "Hassas elektronik cihazlar ve aksesuarları için koruyucu, antistatik blister ve vakum ambalaj çözümlerimiz.",
+      images: [
+        { src: "images/elektronik_sarj.png", title: "Cep Telefonu Şarj Aleti Blister Ambalaj" },
+        { src: "images/elektronik_kulaklik.png", title: "Kablosuz Kulaklık Blister Ambalaj" },
+        { src: "images/elektronik_gamepad.png", title: "PC Oyun Kolu Vakum Ambalaj" },
+        { src: "images/elektronik_kilif.png", title: "Cep Telefonu Kılıfı Karton Blister" }
+      ]
+    },
     'sektor-oyuncak': {
       title: "Oyuncak Sektörü Örnekleri",
       desc: "Oyuncak sektörü için göz alıcı, sağlam ve güvenli blister ambalaj çözümlerimiz.",
