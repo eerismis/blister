@@ -207,6 +207,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ── Sector Image Modal (Dynamic) ────── */
   const sectorData = {
+    'sektor-kozmetik': {
+      title: "Kozmetik Sektörü Örnekleri",
+      desc: "Kozmetik ürünler için kristal netliğinde, şık ve koruyucu blister/vakum ambalaj çözümlerimiz.",
+      images: [
+        { src: "images/kozmetik_ruj.png", title: "Ruj Blister Ambalaj" },
+        { src: "images/kozmetik_goz.png", title: "3'lü Göz Kalemi Seti Askılı Blister" },
+        { src: "images/kozmetik_pudra.png", title: "12'li Pudra Tavası" },
+        { src: "images/kozmetik_tirnak.png", title: "Tırnak Seti Karton Blister Ambalaj" }
+      ]
+    },
     'sektor-kirtasiye': {
       title: "Kırtasiye Sektörü Örnekleri",
       desc: "Kırtasiye sektörü için ürettiğimiz çeşitli blister ve seperatör ambalaj çözümleri.",
