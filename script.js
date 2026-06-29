@@ -205,22 +205,75 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  /* ── Sector Image Modal (Kırtasiye) ────── */
-  const kirtasiyeCard = document.getElementById('sektor-kirtasiye');
+  /* ── Sector Image Modal (Dynamic) ────── */
+  const sectorData = {
+    'sektor-kirtasiye': {
+      title: "Kırtasiye Sektörü Örnekleri",
+      desc: "Kırtasiye sektörü için ürettiğimiz çeşitli blister ve seperatör ambalaj çözümleri.",
+      images: [
+        { src: "images/kirtasiye_kalem.png", title: "4'lü Kalem Seti Blister Ambalajı" },
+        { src: "images/kirtasiye_pastel.png", title: "Pastel Boya Seperatörü" },
+        { src: "images/kirtasiye_bant.png", title: "Bant ve Makas Blister Ambalajı" },
+        { src: "images/kirtasiye_silgi.png", title: "Uçlu Kalem ve Silgi Seti Blister" }
+      ]
+    },
+    'sektor-hirdavat': {
+      title: "Hırdavat Sektörü Örnekleri",
+      desc: "Hırdavat sektörü için ürettiğimiz yüksek mukavemetli blister ve kutu ambalaj çözümleri.",
+      images: [
+        { src: "images/hirdavat_delme.png", title: "Delme ve Vidalama Uçları Seti Ambalajı" },
+        { src: "images/hirdavat_kontrol.png", title: "Kontrol Kalemi ve İzole Bant Elektrik Blister Ambalaj" },
+        { src: "images/hirdavat_vida.png", title: "Askılı 20'li Vida Seti PVC Kutu" },
+        { src: "images/hirdavat_pense.png", title: "Pense Blister Ambalaj" }
+      ]
+    }
+  };
+
   const imageModal = document.getElementById('sectorImageModal');
+  const modalTitle = document.getElementById('modalTitle');
+  const modalDesc = document.getElementById('modalDesc');
+  const modalGrid = document.getElementById('modalGrid');
   const modalClose = document.getElementById('modalClose');
   const modalOverlay = document.getElementById('modalOverlay');
 
-  if (kirtasiyeCard && imageModal && modalClose && modalOverlay) {
-    kirtasiyeCard.addEventListener('click', () => {
-      imageModal.classList.add('active');
-      document.body.style.overflow = 'hidden'; // Prevent background scrolling
-      
-      // Trigger reveal animations inside modal
-      setTimeout(() => {
-        const modalReveals = imageModal.querySelectorAll('.reveal');
-        modalReveals.forEach(el => el.classList.add('visible'));
-      }, 100);
+  if (imageModal && modalTitle && modalDesc && modalGrid && modalClose && modalOverlay) {
+    
+    // Attach click listeners to all clickable sector cards
+    document.querySelectorAll('.clickable-card').forEach(card => {
+      card.addEventListener('click', () => {
+        const data = sectorData[card.id];
+        if (!data) return;
+
+        // Populate modal data
+        modalTitle.textContent = data.title;
+        modalDesc.textContent = data.desc;
+        
+        // Build image grid
+        modalGrid.innerHTML = data.images.map((img, index) => `
+          <div class="modal-image-card reveal">
+            <div class="modal-image-wrapper">
+              <img src="${img.src}" alt="${img.title}" loading="lazy" />
+            </div>
+            <div class="modal-image-info">
+              <p>${img.title}</p>
+            </div>
+          </div>
+        `).join('');
+
+        // Open modal
+        imageModal.classList.add('active');
+        document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        
+        // Trigger reveal animations inside modal with staggered delay
+        setTimeout(() => {
+          const modalReveals = imageModal.querySelectorAll('.reveal');
+          modalReveals.forEach((el, idx) => {
+            setTimeout(() => {
+              el.classList.add('visible');
+            }, idx * 100);
+          });
+        }, 100);
+      });
     });
 
     const closeModal = () => {

@@ -378,9 +378,15 @@
         </article>
 
         <!-- Hardware -->
-        <article class="sector-showcase-card reveal reveal-delay-2" id="sektor-hirdavat">
+        <article class="sector-showcase-card reveal reveal-delay-2 clickable-card" id="sektor-hirdavat" title="Ürün örneklerini görmek için tıklayın">
           <div class="sector-showcase-image">
             <img src="images/hardware.png" alt="Hırdavat sektörü, matkap uçları ve el aletleri için yüksek mukavemetli kilitli blister ambalaj" loading="lazy" />
+            <div class="sector-hover-overlay">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607ZM10.5 7.5v6m3-3h-6" />
+              </svg>
+              Örnekleri İncele
+            </div>
           </div>
           <div class="sector-showcase-body">
             <h3>Hırdavat Sektörü</h3>
@@ -794,42 +800,11 @@
         </svg>
       </button>
       <div class="image-modal-header">
-        <h3 id="modalTitle">Kırtasiye Sektörü Örnekleri</h3>
-        <p>Kırtasiye sektörü için ürettiğimiz çeşitli blister ve seperatör ambalaj çözümleri.</p>
+        <h3 id="modalTitle">Sektör Örnekleri</h3>
+        <p id="modalDesc">Sektör için ürettiğimiz çeşitli blister ve seperatör ambalaj çözümleri.</p>
       </div>
       <div class="image-modal-grid" id="modalGrid">
-        <div class="modal-image-card reveal">
-          <div class="modal-image-wrapper">
-            <img src="images/kirtasiye_kalem.png" alt="4'lü kalem seti blister ambalajı" loading="lazy" />
-          </div>
-          <div class="modal-image-info">
-            <p>4'lü Kalem Seti Blister Ambalajı</p>
-          </div>
-        </div>
-        <div class="modal-image-card reveal reveal-delay-1">
-          <div class="modal-image-wrapper">
-            <img src="images/kirtasiye_pastel.png" alt="Pastel boya seperatörü" loading="lazy" />
-          </div>
-          <div class="modal-image-info">
-            <p>Pastel Boya Seperatörü</p>
-          </div>
-        </div>
-        <div class="modal-image-card reveal reveal-delay-2">
-          <div class="modal-image-wrapper">
-            <img src="images/kirtasiye_bant.png" alt="Bant ve makas blister ambalajı" loading="lazy" />
-          </div>
-          <div class="modal-image-info">
-            <p>Bant ve Makas Blister Ambalajı</p>
-          </div>
-        </div>
-        <div class="modal-image-card reveal reveal-delay-3">
-          <div class="modal-image-wrapper">
-            <img src="images/kirtasiye_silgi.png" alt="Uçlu kalem ve silgi seti blister ambalajı" loading="lazy" />
-          </div>
-          <div class="modal-image-info">
-            <p>Uçlu Kalem ve Silgi Seti Blister</p>
-          </div>
-        </div>
+        <!-- Dynamically populated via JS -->
       </div>
     </div>
   </div>
