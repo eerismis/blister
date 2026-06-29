@@ -226,6 +226,16 @@ document.addEventListener('DOMContentLoaded', () => {
         { src: "images/hirdavat_vida.png", title: "Askılı 20'li Vida Seti PVC Kutu" },
         { src: "images/hirdavat_pense.png", title: "Pense Blister Ambalaj" }
       ]
+    },
+    'sektor-oyuncak': {
+      title: "Oyuncak Sektörü Örnekleri",
+      desc: "Oyuncak sektörü için göz alıcı, sağlam ve güvenli blister ambalaj çözümlerimiz.",
+      images: [
+        { src: "images/oyuncak_asker.png", title: "Asker Seri Blister Ambalaj" },
+        { src: "images/oyuncak_mutfak.png", title: "Mutfak Seti Karton Blister Ambalaj" },
+        { src: "images/oyuncak_traktor.png", title: "Traktör Vakum Ambalaj" },
+        { src: "images/oyuncak_pingpong.png", title: "Masa Tenisi Raketi ve Topu Blister" }
+      ]
     }
   };
 
