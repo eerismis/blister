@@ -247,6 +247,16 @@ document.addEventListener('DOMContentLoaded', () => {
         { src: "images/elektronik_kilif.png", title: "Cep Telefonu Kılıfı Karton Blister" }
       ]
     },
+    'sektor-zuccaciye': {
+      title: "Züccaciye Sektörü Örnekleri",
+      desc: "Cam, porselen ve hassas mutfak eşyaları için darbe emici, güvenli seperatör ve ambalaj çözümlerimiz.",
+      images: [
+        { src: "images/zuccaciye_cay.png", title: "6'lı Çay Bardağı Taşıma Seperatörü" },
+        { src: "images/tableware.png", title: "Kahve Fincanı ve Tabağı Koruyucu Ambalaj (Geçici Görsel)" },
+        { src: "images/industrial_trays.png", title: "Çatal Kaşık Bıçak Seperatörü (Geçici Görsel)" },
+        { src: "images/tableware.png", title: "Mutfak Bıçağı Blister Ambalaj (Geçici Görsel)" }
+      ]
+    },
     'sektor-oyuncak': {
       title: "Oyuncak Sektörü Örnekleri",
       desc: "Oyuncak sektörü için göz alıcı, sağlam ve güvenli blister ambalaj çözümlerimiz.",
