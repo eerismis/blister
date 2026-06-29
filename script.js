@@ -231,7 +231,7 @@ document.addEventListener('DOMContentLoaded', () => {
       title: "Oyuncak Sektörü Örnekleri",
       desc: "Oyuncak sektörü için göz alıcı, sağlam ve güvenli blister ambalaj çözümlerimiz.",
       images: [
-        { src: "images/oyuncak_asker.png", title: "Asker Seri Blister Ambalaj" },
+        { src: "images/oyuncak_asker.png", title: "Asker Seti Blister Ambalaj" },
         { src: "images/oyuncak_mutfak.png", title: "Mutfak Seti Karton Blister Ambalaj" },
         { src: "images/oyuncak_traktor.png", title: "Traktör Vakum Ambalaj" },
         { src: "images/oyuncak_pingpong.png", title: "Masa Tenisi Raketi ve Topu Blister" }
