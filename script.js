@@ -213,7 +213,7 @@ document.addEventListener('DOMContentLoaded', () => {
       images: [
         { src: "images/kozmetik_ruj.png", title: "Ruj Blister Ambalaj" },
         { src: "images/kozmetik_goz.png", title: "3'lü Göz Kalemi Seti Askılı Blister" },
-        { src: "images/kozmetik_pudra.png", title: "12'li Pudra Tavası" },
+        { src: "images/kozmetik_pudra.png", title: "12'li Far Tavası" },
         { src: "images/kozmetik_tirnak.png", title: "Tırnak Seti Karton Blister Ambalaj" }
       ]
     },
